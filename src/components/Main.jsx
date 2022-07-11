@@ -10,7 +10,7 @@ import { FaCloudDownloadAlt } from "react-icons/fa";
 
 function Main() {
   return (
-    <div className="w-full h-fit sm:h-screen flex flex-col justify-between">
+    <div name="home" className="w-full h-fit sm:h-screen flex flex-col justify-between">
       <div className="w-full h-full">
         <div className="main-container grid md:grid-cols-2 gap-2 px-24 pt-24">
           {/* Left grid */}

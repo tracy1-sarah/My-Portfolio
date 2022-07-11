@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { HiOutlineMail} from "react-icons/hi";
+import { HiOutlineMail } from "react-icons/hi";
+import {Link} from 'react-scroll';
+
 
 function Navbar() {
 
@@ -12,30 +14,76 @@ function Navbar() {
     <div className='w-screen h-[80px] z-10 bg-zinc-100 fixed drop-shadow-lg'>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
-          <h1 className='logo text-3xl font-semibold mr-4 sm:text-4xl text-black'>TRACY.</h1>
+          <h1 className='logo text-3xl font-semibold mr-4 sm:text-4xl text-black'>
+            <Link to="home" smooth={true} duration={500}>
+              TRACY.
+            </Link>
+          </h1>
           <ul className='hidden md:flex'>
-            <li className="p-4 cursor-pointer">Home</li>
-            <li className="p-4 cursor-pointer">Services</li>
-            <li className='p-4 cursor-pointer'>Stacks</li>
-            <li className="p-4 cursor-pointer">Portfolio</li>     
+            <li className="p-4 cursor-pointer">
+              <Link  to="home" smooth={true}  duration={500}>
+                Home
+              </Link>
+            </li>
+            <li className="p-4 cursor-pointer">
+              <Link to="services" smooth={true} duration={500}>
+                Services
+              </Link>
+            </li>
+            <li className='p-4 cursor-pointer'>
+              <Link to="stack" smooth={true} duration={500}>
+                Stacks
+              </Link>
+            </li>
+            <li className="p-4 cursor-pointer">
+              <Link to="project" smooth={true} duration={500}>
+                Projects
+              </Link></li>     
           </ul>
         </div>
         <div className="hidden md:flex pr-4">
-          <button className='px-4 py-2 text-white border bg-purple-600 border-purple-600 rounded-md'>Contact Me</button>
+          <button className='px-4 py-2 text-white border bg-purple-600 border-purple-600 rounded-md'>
+            <Link to="contact" smooth={true} duration={500}>
+              Contact Me
+            </Link>
+          </button>
         </div>
-        <div className='md:hidden' onClick={handleClick}>
+        <div className='md:hidden z-10' onClick={handleClick}>
           {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
         </div>
       </div>
 
-      <ul className={!nav ? 'hidden' : 'absolute bg-zinc-100 w-full px-8'}>
-        <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-        <li className='border-b-2 border-zinc-300 w-full'>About</li>
-        <li className='border-b-2 border-zinc-300 w-full'>Stacks</li>
-        <li className='border-b-2 border-zinc-300 w-full'>Portfolio</li>
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center bg-zinc-100 items-center'}>
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to="services" smooth={true} duration={500}>
+            Services
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to="stack" smooth={true} duration={500}>
+            Stacks
+          </Link>
+        </li>
+        {' '}
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to="project" smooth={true} duration={500}>
+            Projects
+          </Link>
+        </li>
 
         <div className='flex flex-col my-4'>
-          <button className='px-4 py-3 text-white border bg-purple-600 border-purple-600  rounded-md'>Contact Me</button>
+          <button className='px-4 py-3 text-white border bg-purple-600 border-purple-600  rounded-md'>
+            <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
+              Contact Me
+            </Link>
+          </button>
         </div>
       </ul>
 

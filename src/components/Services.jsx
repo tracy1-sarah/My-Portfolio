@@ -4,8 +4,8 @@ import bg2 from '../assets/bg2.jpg'
 
 function Services() {
     return (
-        <div className='w-full h-fit'>
-            <div className='hidden lg:flex w-full h-[700px] bg-gray-900/90 absolute'>
+        <div name="services" className='w-full h-fit'>
+            <div className='hidden lg:flex w-full h-[700px]  bg-gray-900/90 absolute'>
                 <img className='w-full h-full object-cover mix-blend-overlay' src={bg2} alt="support" />
             </div>
             <div className='max-w-[1000px]  mx-auto text-white relative'>
