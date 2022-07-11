@@ -1,16 +1,30 @@
-import React from 'react'
+import React from "react";
 
-function Card({emoji, title, description,link}) {
+function Card({ title, image, demoLink, codeLink }) {
   return (
-      <div className='bords w-60 h-62 flex flex-col absolute items-center text-center bg-slate-100 my-12'>
-          <img className='scale-75 mb-2' src={emoji} alt='' />
-          <span className='text-2xl font-bold'>{title}</span>
-          <span className='bg-gray-100'>{description}</span>
-          {/* <button className='bg-purple-300 hover:bg-yellow-200 rounded-md shadow-slate-500 p-2 mt-2 border-0'>
-              <a href={link} target="_blank" rel='noreferrer'>View Project</a>
-          </button> */}
+    <div
+      style={{ backgroundImage: `url(${image})` }}
+      className="shadow-lg shadow-[#957bcb] group container rounded-md flex justify-center items-center mx-auto content-div"
+    >
+      <div className="opacity-0 group-hover:opacity-100">
+        <span className="text-2xl font-bold text-black tracking-wider">
+          {title}
+        </span>
+        <div className="pt-8 text-center">
+          <a href={demoLink} target="_blank" rel="noreferrer">
+            <button className="text-center rounded-lg px-4 py-3 m-2 bg-purple-600 text-white font-bold text-lg">
+              Demo
+            </button>
+          </a>
+          <a href={codeLink} target="_blank" rel="noreferrer">
+            <button className="text-center rounded-lg px-4 py-3 m-2 bg-purple-600 text-white font-bold text-lg">
+              Code
+            </button>
+          </a>
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
-export default Card
+export default Card;

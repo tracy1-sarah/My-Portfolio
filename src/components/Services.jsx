@@ -1,17 +1,16 @@
 import { DesktopComputerIcon, ArrowSmRightIcon } from "@heroicons/react/outline"
 import { PencilAltIcon, UserIcon } from "@heroicons/react/solid"
-import bg1 from '../assets/bg2.jpg'
+import bg2 from '../assets/bg2.jpg'
 
 function Services() {
     return (
-        <div className='w-full h-fit mt-16'>
-            <div className='bg-image w-full h-[700px] bg-gray-900/90 absolute'>
-                <img className='w-full h-full object-cover mix-blend-overlay' src={bg1} alt="support" />
+        <div className='w-full h-fit'>
+            <div className='hidden lg:flex w-full h-[700px] bg-gray-900/90 absolute'>
+                <img className='w-full h-full object-cover mix-blend-overlay' src={bg2} alt="support" />
             </div>
-
-            <div className='max-w-[1240px] mx-auto text-white relative'>
-                <div className='px-4 py-12'>
-                    <h2 className=' text-3xl font-bold pt-8 text-slate-200 uppercase text-center'>Services</h2>
+            <div className='max-w-[1000px]  mx-auto text-white relative'>
+                <div className='px-4 py-12 mb-2 sm:mb-4'>
+                    <h2 className='text-black sm:text-slate-300 text-3xl font-bold inline border-b-4 border-purple-600 pt-8 uppercase text-center'>Services</h2>
                 </div>
 
                 <div className='grid gric-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-2 text-black'>
