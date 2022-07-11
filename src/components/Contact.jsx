@@ -10,7 +10,7 @@ function Contact() {
         <input className='p-2 bg-purple-100' type="text" placeholder='Name' name='name' />
         <input className='my-4 p-2 bg-purple-100' type="email" placeholder='Email' name='email' />
         <textarea className='bg-purple-100 p-2' name='message' placeholder='Message' rows="10"></textarea>
-        <button className='text-black border-4 border-purple-600 hover:bg-purple-600 hover:border-purple-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Connect</button>
+        <button className=' border-4 border-purple-600 hover:bg-purple-600 hover:border-purple-600 px-4 py-3 my-8 mx-auto flex items-center'>Let's Connect</button>
 
 
       </form>

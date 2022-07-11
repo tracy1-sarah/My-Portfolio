@@ -26,8 +26,13 @@ body {
     rgba(146, 110, 223, 0.8)
   )!important;
 }
-@media screen and (max-width: 480px) {
 
+.toggle>*{
+  width: 2rem;
+  height: 1rem;
+}
+
+@media screen and (max-width: 480px) {
   /* Main Js */
   .main-container {
     padding: 2rem;

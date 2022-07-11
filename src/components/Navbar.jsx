@@ -1,49 +1,58 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
-import {Link} from 'react-scroll';
-
+import { Link } from 'react-scroll';
+import Toggle from './Toggle/Toggle';
+import { themeContext } from './Context/Context';
 
 function Navbar() {
-
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
+  
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
 
   return (
-    <div className='w-screen h-[80px] z-10 bg-zinc-100 fixed drop-shadow-lg'>
+    <div className='w-screen h-[80px] z-10 bg-zinc-100 fixed drop-shadow-lg'
+      style={{
+        background: darkMode ? 'black' : '',
+        }}>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
-          <h1 className='logo text-3xl font-semibold mr-4 sm:text-4xl text-black'>
-            <Link to="home" smooth={true} duration={500}>
+          <h1 className='logo text-3xl font-semibold mr-4 sm:text-4xl'>
+            <Link to="home" smooth={true} duration={300}>
               TRACY.
             </Link>
           </h1>
           <ul className='hidden md:flex'>
             <li className="p-4 cursor-pointer">
-              <Link  to="home" smooth={true}  duration={500}>
+              <Link  to="home" smooth={true}  duration={300}>
                 Home
               </Link>
             </li>
             <li className="p-4 cursor-pointer">
-              <Link to="services" smooth={true} duration={500}>
+              <Link to="services" smooth={true} duration={300}>
                 Services
               </Link>
             </li>
             <li className='p-4 cursor-pointer'>
-              <Link to="stack" smooth={true} duration={500}>
+              <Link to="stack" smooth={true} duration={300}>
                 Stacks
               </Link>
             </li>
             <li className="p-4 cursor-pointer">
-              <Link to="project" smooth={true} duration={500}>
+              <Link to="project" smooth={true} duration={300}>
                 Projects
               </Link></li>     
           </ul>
         </div>
+        <div className='md:flex pr-2'>
+          <Toggle />
+        </div>
         <div className="hidden md:flex pr-4">
           <button className='px-4 py-2 text-white border bg-purple-600 border-purple-600 rounded-md'>
-            <Link to="contact" smooth={true} duration={500}>
+            <Link to="contact" smooth={true} duration={300}>
               Contact Me
             </Link>
           </button>
@@ -52,28 +61,31 @@ function Navbar() {
           {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
         </div>
       </div>
-
-      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center bg-zinc-100 items-center'}>
+          {/* Mobile Hamburger */}
+      <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen flex flex-col justify-center bg-zinc-100 items-center'}
+        style={{
+          background: darkMode ? 'black' : '',
+        }}>
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="home" smooth={true} duration={300}>
             Home
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to="services" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="services" smooth={true} duration={300}>
             Services
           </Link>
         </li>
         <li className='py-6 text-4xl'>
           {' '}
-          <Link onClick={handleClick} to="stack" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="stack" smooth={true} duration={300}>
             Stacks
           </Link>
         </li>
         {' '}
         <li className='py-6 text-4xl'>
-          <Link onClick={handleClick} to="project" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="project" smooth={true} duration={300}>
             Projects
           </Link>
         </li>

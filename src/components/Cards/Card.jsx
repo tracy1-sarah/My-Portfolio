@@ -13,12 +13,12 @@ function Card({ title, image, demoLink, codeLink }) {
         <div className="pt-8 text-center">
           <a href={demoLink} target="_blank" rel="noreferrer">
             <button className="text-center rounded-lg px-4 py-3 m-2 bg-purple-600 text-white font-bold text-lg">
-              Demo
+              Live Demo
             </button>
           </a>
           <a href={codeLink} target="_blank" rel="noreferrer">
             <button className="text-center rounded-lg px-4 py-3 m-2 bg-purple-600 text-white font-bold text-lg">
-              Code
+              Github
             </button>
           </a>
         </div>
