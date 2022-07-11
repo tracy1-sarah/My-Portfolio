@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Services from "./components/Services";
+import Skills from "./components/Skills"
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { themeContext } from "./components/Context/Context";
@@ -17,6 +18,7 @@ function App() {
       <Navbar />
       <Main />
       <Services />
+      <Skills/>
       <Projects />  
       <Contact/>
     </div>
