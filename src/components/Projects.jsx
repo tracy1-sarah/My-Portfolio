@@ -4,17 +4,18 @@ import bg1 from "../assets/bg1.jpg";
 import bg3 from "../assets/bg3.jpg";
 import bg4 from "../assets/bg4.jpg";
 
+
 function Projects() {
 
   return (
-    <div name="project" className="w-full md:h-[700px]  mt-24">
+    <div name="project" className="project-bg w-full md:h-screen mt-24 bg-gray-300">
       <div className="max-w-[1000px] mx-auto p-2 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4  border-purple-600"
          >
             My Recent Works
           </p>
-          <p className="py-6 text-xl">
+          <p className="py-6">
             Have a look at my recent works
           </p>
         </div>

@@ -20,7 +20,7 @@ function Skills() {
                     <p className="py-4">Techonologies and Tools</p>
                 </div>
 
-                <div className="w-full grid grid-cold-2 sm:grid-cols-4 gap-4 text-center py-8" >
+                <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8" >
                     <SkillCard
                         image={html}
                         alt={"html image"}

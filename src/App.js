@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import { themeContext } from "./components/Context/Context";
 import { useContext } from "react";
+import Footer from "./components/Footer"
 
 function App() {
   const theme = useContext(themeContext)
@@ -20,7 +21,8 @@ function App() {
       <Services />
       <Skills/>
       <Projects />  
-      <Contact/>
+      <Contact />
+      <Footer/>
     </div>
   );
 }

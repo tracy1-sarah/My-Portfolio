@@ -32,12 +32,15 @@ body {
   height: 1rem;
 }
 
+
+
 @media screen and (max-width: 480px) {
   /* Main Js */
   .main-container {
     padding: 2rem;
     height: 65%;
   }
+
 }
 
 /* End of media query */
