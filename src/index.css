@@ -23,8 +23,9 @@ body {
   background-image: linear-gradient(
     to right,
     rgba(187, 165, 253, 0.8),
-    rgba(146, 110, 223, 0.8)
+    rgba(179, 152, 236, 0.8)
   )!important;
+  opacity: 1;
 }
 
 .toggle>*{

@@ -8,7 +8,7 @@ import bg4 from "../assets/bg4.jpg";
 function Projects() {
 
   return (
-    <div name="project" className="project-bg w-full md:h-screen mt-24 bg-gray-300">
+    <div name="project" className="project-bg w-full md:h-screen mt-24 bg-gray-200">
       <div className="max-w-[1000px] mx-auto p-2 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4  border-purple-600"
