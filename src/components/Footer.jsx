@@ -17,7 +17,7 @@ function Footer() {
             </div>
 
             <div className='flex flex-col max-w-[1000px] px-2 py-2 mx-auto justify-between sm:flex-row text-center text-gray-500'>
-                <p className='py-4'>Tracy's Portfolio, All rights reserved!</p>
+                <p className='py-4'>&copy;  Copyright 2022 Tracy's Space, All rights reserved!</p>
                 <div className='flex justify-between  sm:w-[300px] pt-4 text-2xl'>
                     <a href="https://www.instagram.com/_tracysarah/" target="_blank" rel="noreferrer">
                     <FaInstagram />
