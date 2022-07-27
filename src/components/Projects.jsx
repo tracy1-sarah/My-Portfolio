@@ -3,14 +3,10 @@ import Card from "./Cards/Card";
 import bg1 from "../assets/bg1.jpg";
 import bg3 from "../assets/bg3.jpg";
 import bg4 from "../assets/bg4.jpg";
-import { motion } from "framer-motion";
 
 
 
 function Projects() {
-  const transition = { duration: 2, type: "spring" };
-
-
   return (
     <div name="project" className="project-bg w-full md:h-screen mt-24 bg-gray-200">
       <div className="max-w-[1000px] mx-auto p-2 flex flex-col justify-center w-full h-full">

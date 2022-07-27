@@ -7,6 +7,7 @@ import vector from "../assets/vector.svg";
 import resume from "../assets/file/resume.pdf";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
+import tracy from "../assets/TracyS.png"
 
 function Main() {
   const transition = { duration: 2, type: "spring" };
@@ -39,7 +40,7 @@ function Main() {
           {/* RIGHT GRID */}
           <div className="image-container hidden lg:flex relative">
             <img src={vector} alt="vector" />
-            {/* <img src={tracy} alt="Background" /> */}
+            <img className="w-full main_image " src={tracy} alt="Background" />
             <motion.img
               initial={{ left: "-40%" }}
               whileInView={{ left: "-14%" }}
