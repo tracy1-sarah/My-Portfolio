@@ -24,8 +24,8 @@ function Main() {
             <span className="text-4xl sm:text-5xl font-bold mt-4 ">
               Tracy Sarah Afram-Owusu
             </span>
-            <span className="font-light font-2xl text-gray-400 py-4 max-w-[700px] ">
-              A Content creator and Frontend developer with high level of
+            <span className="font-light font-3xl text-gray-500 py-4 max-w-[700px] ">
+              A Content Creator and Front-End Developer with high level of
               expertise in web designing and development. Skilled in Networking,
               Computing, and Teaching. Strong arts and design professional.
             </span>
@@ -40,7 +40,7 @@ function Main() {
           {/* RIGHT GRID */}
           <div className="image-container hidden lg:flex relative">
             <img src={vector} alt="vector" />
-            <img className="w-full main_image " src={tracy} alt="Background" />
+            {/* <img className="w-full main_image " src={tracy} alt="Background" /> */}
             <motion.img
               initial={{ left: "-40%" }}
               whileInView={{ left: "-14%" }}
@@ -58,7 +58,7 @@ function Main() {
               <FloatingDiv image={crown} text1="Web" text2="Developer" />
             </motion.div>
             <motion.div
-              initial={{ top: "20rem", left: "10rem" }}
+              initial={{ top: "25rem", left: "10rem" }}
               whileInView={{ left: "0rem" }}
               transition={transition}
               className="top-96 left-20">
