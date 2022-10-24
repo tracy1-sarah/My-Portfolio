@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useContext} from "react";
 import glassesemoji from "../assets/glassesimoji.png";
 import thumbs from "../assets/thumbup.png";
 import crown from "../assets/crown.png";
@@ -7,9 +7,12 @@ import vector from "../assets/vector.svg";
 import resume from "../assets/file/resume.pdf";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
-import tracy from "../assets/TracyS.png"
+import { themeContext } from './Context/Context';
 
 function Main() {
+  const theme = useContext(themeContext)
+  const darkMode = theme.state.darkMode
+
   const transition = { duration: 2, type: "spring" };
   return (
     <div
@@ -24,7 +27,7 @@ function Main() {
             <span className="text-4xl sm:text-5xl font-bold mt-4 ">
               Tracy Sarah Afram-Owusu
             </span>
-            <span className="font-light font-3xl text-gray-500 py-4 max-w-[700px] ">
+            <span className="font-light font-3xl text-gray-600 py-4 max-w-[700px] ">
               A Content Creator and Front-End Developer with high level of
               expertise in web designing and development. Skilled in Networking,
               Computing, and Teaching. Strong arts and design professional.
@@ -38,9 +41,10 @@ function Main() {
             </a>
           </div>
           {/* RIGHT GRID */}
-          <div className="image-container hidden lg:flex relative">
+          <div className="image-container hidden lg:flex relative" style={{
+        color: darkMode ? 'black' : '',
+        }}>
             <img src={vector} alt="vector" />
-            {/* <img className="w-full main_image " src={tracy} alt="Background" /> */}
             <motion.img
               initial={{ left: "-40%" }}
               whileInView={{ left: "-14%" }}

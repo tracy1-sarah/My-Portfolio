@@ -6,9 +6,6 @@ import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import firebase from "../assets/firebase.png";
 import github from "../assets/github.png";
-
-
-
 import SkillCard from "./Cards/SkillCard";
 
 function Skills() {
@@ -16,8 +13,8 @@ function Skills() {
         <div name="stack" className="w-full h-screen">
             <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
-                    <p className="text-4xl font-bold inline border-b-4  border-purple-600">Stacks</p>
-                    <p className="py-4">Techonologies and Tools</p>
+                    <p className="text-4xl font-bold inline border-b-4 border-purple-600">Stacks</p>
+                    <p className="py-4">Technologies and Tools</p>
                 </div>
 
                 <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8" >
@@ -55,6 +52,16 @@ function Skills() {
                         image={github}
                         alt={"github image"}
                         title={"Github"}
+                    />
+                    <SkillCard
+                        image={github}
+                        alt={"next image"}
+                        title={"Next Js"}
+                    />
+                      <SkillCard
+                        image={react}
+                        alt={"native image"}
+                        title={"React Native"}
                     />
                 </div>
             </div>

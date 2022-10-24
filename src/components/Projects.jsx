@@ -21,7 +21,7 @@ function Projects() {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
           <Card image={bg1}
-            title={"SoboPopx"}
+            title={"MoviePop"}
             demoLink={"https://sobopopx.web.app/"}
             codeLink={"https://github.com/tracy1-sarah/SoboPopx"}
           />

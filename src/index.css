@@ -101,7 +101,7 @@ body {
 
 .blur {
   position: absolute;
-  width: 30rem;
+  width: 70rem;
   height: 18rem;
   border-radius: 50%;
   background: #9925dc;
@@ -113,7 +113,7 @@ body {
 
 .blurs {
   position: absolute;
-  width: 30rem;
+  width: 50rem;
   height: 20rem;
   border-radius: 50%;
   filter: blur(252px);
