@@ -20,7 +20,7 @@ function Navbar() {
         }}>
       <div className='px-2 flex justify-between items-center w-full h-full'>
         <div className='flex items-center'>
-          <h1 className='logo text-3xl font-semibold mr-4 sm:text-4xl'>
+          <h1 className='cursor-pointer logo text-3xl font-semibold mr-4 sm:text-4xl'>
             <Link to="home" smooth={true} duration={300}>
               TRACY.
             </Link>
@@ -112,11 +112,11 @@ function Navbar() {
               Github <FaGithub size={30} className='mr-2' />
             </a>
           </li>
-          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-2px] duration-300 bg-[#6fc2b0]">
+          {/* <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-2px] duration-300 bg-[#6fc2b0]">
             <a className="flex justify-between items-center w-full text-gray-300" href="https://github.com/tracy1-sarah" target="_blank" rel="noreferrer">
               Email <HiOutlineMail size={30} className='mr-2' />
             </a>
-          </li>
+          </li> */}
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-120px] hover:ml-[-2px] duration-300 bg-[#C13584]">
             <a className="flex justify-between items-center w-full text-gray-300" href="https://www.instagram.com/_tracysarah/" target="_blank" rel="noreferrer">
               Instagram <FaInstagram size={30} className='mr-2' />

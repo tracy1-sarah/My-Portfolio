@@ -69,8 +69,8 @@ body {
   left: 2rem;
   top: 2rem;
 }
-
-/* .image-container>:nth-child(4) {
+/* 
+.image-container>:nth-child(4) {
   transform: scale(1.4);
   left: -28%;
 } */
@@ -131,3 +131,24 @@ padding: 0px 26px 2rem 26px;
 }
 
 
+/* custom scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px !important;
+  height: 2px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: #e0e0e0 !important;
+    border-radius: 10px !important;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9333EA !important;
+  border-radius: 10px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9333EA !important;
+}

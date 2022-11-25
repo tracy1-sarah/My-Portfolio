@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub, FaInstagram, FaTwitter  } from "react-icons/fa";
 function Footer() {
     return (
         <div className='w-full mt-24 bg-gray-600 py-8 px-2'>
-            <div className='max-w-[1000px] mx-auto grid  md:grid-cols-4  border-b-2 border-purple-600 py-8'>
+            <div className='max-w-[1240px] mx-auto grid  md:grid-cols-4  border-b-2 border-purple-600 py-8'>
                 <div className='col-span-2 pt-8 md:pt-2'>
                     <p className='font-bold uppercase'>Subscribe to my blog post</p>
                     <p className='py-4'>The latest news, articles and resources sent to your inbox weekly</p>

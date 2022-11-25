@@ -6,12 +6,13 @@ import react from "../assets/react.png";
 import tailwind from "../assets/tailwind.png";
 import firebase from "../assets/firebase.png";
 import github from "../assets/github.png";
+import next from "../assets/next.png";
 import SkillCard from "./Cards/SkillCard";
 
 function Skills() {
     return (
         <div name="stack" className="w-full h-screen">
-            <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
+            <div className="max-w-[1240px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
                     <p className="text-4xl font-bold inline border-b-4 border-purple-600">Stacks</p>
                     <p className="py-4">Technologies and Tools</p>
@@ -54,7 +55,7 @@ function Skills() {
                         title={"Github"}
                     />
                     <SkillCard
-                        image={github}
+                        image={next}
                         alt={"next image"}
                         title={"Next Js"}
                     />
