@@ -10,7 +10,7 @@ function Services() {
     return (
         <div name="services" className='w-full h-screen'>
             <div className='hidden lg:flex flex-col w-full h-screen  bg-gray-900/90 absolute'>
-                <img className='w-full h-screen object-cover mix-blend-overlay' src={bg2} alt="support" />
+                <img className='w-full h-full object-cover mix-blend-overlay' src={bg2} alt="support" />
             </div>
             <div className='max-w-[1240px] mx-auto p-4 flex flex-col justify-center w-full h-full relative'>
                 <div className='px-4 py-12 mb-2 sm:mb-4'>
