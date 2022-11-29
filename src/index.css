@@ -36,18 +36,6 @@ body {
 }
 
 
-
-@media screen and (max-width: 480px) {
-  /* Main Js */
-  .main-container {
-    padding: 2rem;
-    height: 65% !important;
-  }
-
-}
-
-/* End of media query */
-
 .logo{
   font-family: 'Dancing Script', cursive;
 }
@@ -154,3 +142,14 @@ padding: 0px 26px 2rem 26px;
 ::-webkit-scrollbar-thumb:hover {
   background: #9333EA !important;
 }
+
+@media screen and (max-width: 480px) {
+  .main-container {
+    padding: 2rem;
+    height: 65% !important;
+  }
+
+
+  
+}
+
