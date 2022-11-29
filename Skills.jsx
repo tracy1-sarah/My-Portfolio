@@ -11,10 +11,10 @@ import SkillCard from "./Cards/SkillCard";
 
 function Skills() {
     return (
-        <div name="stack" className="w-full h-full">
+        <div name="stack" className="w-full h-screen">
             <div className="max-w-[1240px] mx-auto p-4 flex flex-col justify-center w-full h-full">
                 <div>
-                    <p className="text-4xl font-bold inline border-b-4 border-purple-600">Stacks</p>
+                    <p className="text-4xl font-bold inline border-b-4 border-purple-600">Tech Stacks</p>
                     <p className="py-4">Technologies and Tools</p>
                 </div>
 
