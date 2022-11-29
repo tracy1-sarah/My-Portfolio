@@ -10,7 +10,7 @@ function Projects() {
     <div name="project" className="project-bg w-full md:h-screen mt-24 bg-gray-200">
       <div className="max-w-[1240px] mx-auto p-2 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4  border-purple-600"
+          <p className="text-4xl font-bold inline border-b-4 border-purple-600"
          >
             My Recent Works
           </p>
@@ -29,13 +29,13 @@ function Projects() {
             demoLink={"https://thefairwork.com/"}
             // codeLink={"https://github.com/tracy1-sarah/SoboPopx"}
           />
-          {/* <Card image={bg4}
+          {/* <Card image={bg3}
             title={"SoboPopx"}
             link={"https://sobopopx.web.app/"}
             demoLink={"https://sobopopx.web.app/"}
             codeLink={"https://github.com/tracy1-sarah/SoboPopx"}
-          /> */}
-          
+          />
+           */}
           </div>
       </div>
     </div>

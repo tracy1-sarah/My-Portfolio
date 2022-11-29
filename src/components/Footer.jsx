@@ -6,7 +6,7 @@ function Footer() {
     return (
         <div className='w-full mt-24 bg-gray-600 py-8 px-2'>
             <div className='max-w-[1240px] mx-auto grid  md:grid-cols-4  border-b-2 border-purple-600 py-8'>
-                <div className='col-span-2 pt-8 md:pt-2'>
+                <div className='col-span-2 pt-8 md:pt-2 text-white'>
                     <p className='font-bold uppercase'>Subscribe to my blog post</p>
                     <p className='py-4'>The latest news, articles and resources sent to your inbox weekly</p>
                     <form className='flex flex-col sm:flex-row'>
@@ -16,7 +16,7 @@ function Footer() {
                 </div>
             </div>
 
-            <div className='flex flex-col max-w-[1000px] px-2 py-2 mx-auto justify-between sm:flex-row text-center text-gray-500'>
+            <div className='flex flex-col max-w-[1000px] px-2 py-2 mx-auto justify-between sm:flex-row text-center text-white'>
                 <p className='py-4'>&copy;  Copyright 2022 Tracy's Space, All rights reserved!</p>
                 <div className='flex justify-between  sm:w-[300px] pt-4 text-2xl'>
                     <a href="https://www.instagram.com/_tracysarah/" target="_blank" rel="noreferrer">

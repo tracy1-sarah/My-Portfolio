@@ -18,10 +18,10 @@ function Main() {
   return (
     <div
       name="home"
-      className="w-full h-screen sm:h-screen flex flex-col justify-between"
+      className="w-full h-fit sm:h-screen flex flex-col justify-between"
     >
       <div className="w-full h-full">
-        <div className=" main-container grid md:grid-cols-2 gap-2 px-12 pt-24">
+        <div className="main-container grid md:grid-cols-2 gap-2 px-12 pt-24">
           {/* Left grid */}
           <div className="flex flex-col justify-center md:items-start w-full px-2 py-24">
             <span className="text-4xl sm:text-5xl font-bold">Heyaa! I am</span>
